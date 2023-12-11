@@ -13,24 +13,43 @@ body {
     display: flex;
 }
 
-/* Left Column Styles */
-.left-column {
-    width: 30%; /* Adjust the width as needed */
+.left-empty-column {
+    width: 15%; /* Adjust the width as needed */
     padding: 20px;
     text-align: center; /* Center content in left column */
 }
 
-.profile-pic {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
-    border-radius: 50%;
-    margin-bottom: 10px;
+/* Left Column Styles */
+.left-column {
+    width: 13%;
+    padding: 20px;
+    margin-top: 10px;
+    padding-right: 10px;
+    text-align: left; /* Align content to the left */
 }
+
+
 
 /* Right Column Styles */
 .right-column {
-    width: 70%; /* Adjust the width as needed */
+    width: 72%; /* Adjust the width as needed */
     padding: 20px;
+}
+
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(241, 241, 241);
+    padding: 5px;
+    background-color: #fff;
+    margin: 0 auto; /* Center the image horizontally within the container */
+}
+
+/* Style the name under the profile picture */
+h3 {
+    margin-top: 10px; /* Add space between the profile picture and the name */
 }
 
 /* Footer Styles */
