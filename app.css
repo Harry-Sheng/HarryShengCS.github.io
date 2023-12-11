@@ -4,51 +4,42 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #fff;
     color: #333;
 }
 
-/* Header Styles */
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+/* Container for Two Columns */
+.container {
+    display: flex;
 }
 
-/* Navigation Bar Styles */
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Main Content Styles */
-main {
+/* Left Column Styles */
+.left-column {
+    width: 30%; /* Adjust the width as needed */
     padding: 20px;
+    text-align: center; /* Center content in left column */
 }
 
-main section {
-    margin-bottom: 20px;
+.profile-pic {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Right Column Styles */
+.right-column {
+    width: 70%; /* Adjust the width as needed */
     padding: 20px;
-    background: #fff;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #333;
+    border-top: 1px solid #eee;
 }
 
-/* Add your own styles below */
+/* Add additional styles as needed */
