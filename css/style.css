@@ -1,0 +1,58 @@
+#main {
+  display: flex; 
+  max-width: 925px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  margin-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  animation: intro 0.3s both;
+  animation-delay: 0.35s
+}
+
+.side_bar {
+    position: sticky;
+    top: 2em;
+    height: 500PX; 
+    z-index: 1000; 
+}
+
+.avatar {
+  display: table-cell; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  vertical-align: top;
+  width: 36px;
+}
+
+#profile_picture {
+  max-width: 165px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 0;
+  border: 2px solid rgb(213, 229, 249); 
+  padding: 5px;
+}
+
+.about_me {
+  flex-grow: 1; 
+  margin-left: 10%;
+}
+
+#author_name{
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+#author_university{
+  margin-top:0;
+  margin-bottom: 0%;
+}
+
+#about_title{
+  margin-top: 0;
+  border-bottom: 2px solid rgb(242, 242, 242); 
+  padding-bottom: 1.5%; 
+}
