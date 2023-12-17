@@ -1,5 +1,6 @@
 body {
   font-family: Georgia, 'Times New Roman', Times, serif, Arial, sans-serif; 
+  font-size: 1rem;
 }
 
 #main {
@@ -11,14 +12,12 @@ body {
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
-  animation: intro 0.3s both;
-  animation-delay: 0.35s
 }
 
 .side_bar {
     position: sticky;
     top: 2em;
-    height: 500PX; 
+    height: 2rem; 
     z-index: 1000; 
 }
 
@@ -28,7 +27,7 @@ body {
   align-items: center; 
   width: 100%; 
   vertical-align: top;
-  width: 36px;
+  margin-right: 1rem;
 }
 
 #profile_picture {
@@ -43,6 +42,7 @@ body {
 .about_me {
   flex-grow: 1; 
   margin-left: 10%;
+  margin-right: 10%;
 }
 
 #author_name{
@@ -51,7 +51,7 @@ body {
 }
 
 #author_university{
-  margin-top:0;
+  margin-top: 1%;
   margin-bottom: 0%;
 }
 
@@ -59,4 +59,47 @@ body {
   margin-top: 0;
   border-bottom: 2px solid rgb(242, 242, 242); 
   padding-bottom: 1.5%; 
+}
+
+@media (max-width: 941px) {
+  #main {
+    flex-direction: column;
+  }
+
+  .side_bar { 
+    display: flex;
+    position: relative;
+    top: auto;
+    height: auto; 
+    z-index: auto; 
+    order: -1; /* This will ensure that the sidebar goes on top */
+    margin-bottom: 1rem;
+  }
+
+  #profile_picture {
+    max-width: 40px; 
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .about_me {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .avatar {
+    display: table-cell; 
+    vertical-align: top;
+    width:auto;
+  }
+
+  #author_name{
+    margin-top: 0.8%;
+    margin-bottom: 0;
+  }
+
+  #author_contact {
+    display: none;
+  }
+  
 }
